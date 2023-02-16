@@ -9,7 +9,10 @@ public class BonusScore implements GameScore {
      * @return score: Value of the score. 
      */
     public int calculateScore( int correctCount, int incorrectCount) {
-        return 1;
+        int score = 0;
+        score += correctCount*10;
+        score -= incorrectCount*5;
+        return score;
     }
 
 }

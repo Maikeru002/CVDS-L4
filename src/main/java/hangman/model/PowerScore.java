@@ -9,7 +9,9 @@ public class PowerScore implements GameScore {
      * @return score: Value of the score. 
      */
     public int calculateScore( int correctCount, int incorrectCount) {
-        return 1;
+        int score = 0;
+        score += 5^correctCount;
+        score -= incorrectCount*8;
+        return score;
     }
-
 }
