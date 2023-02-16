@@ -1,6 +1,6 @@
 package hangman.model;
 
-public abstract class PowerScore implements GameScore {
+public class PowerScore implements GameScore {
     
     /**
      * 
